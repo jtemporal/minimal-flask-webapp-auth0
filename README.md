@@ -37,7 +37,7 @@ This application is a sample on how to integrate Auth0 for authentication in a F
 ----
 
 Where to find us: 
-• Jess' LinkedIn: http://linkedin.com/in/jessicatemporal/
-• Juan's LinkedIn: https://www.linkedin.com/in/bajcmartinez/
+* Jess' LinkedIn: http://linkedin.com/in/jessicatemporal/
+* Juan's LinkedIn: https://www.linkedin.com/in/bajcmartinez/
 
 Sign up for Auth0's developer newsletter here: https://a0.to/nl-signup/python
