@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+<head>
+  <title>Profile</title>
+</head>
+{% block content %}
+
+<div>
+  <h2>Profile</h2>
+  <div>
+    <p>Welcome home {{ session['userinfo']['name'] }}!</p>
+  </div>
+</div>
+{% endblock %}
