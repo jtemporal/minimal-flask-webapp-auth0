@@ -9,5 +9,11 @@
   <div>
     <p>Welcome home {{ session['userinfo']['name'] }}!</p>
   </div>
+  <div>
+    <p class="json-title">Here is your profile information:</p>
+    <div class="json-container">
+      <pre>{{ session['userinfo'] | to_pretty_json }}</pre>
+    </div>
+  </div>
 </div>
 {% endblock %}
