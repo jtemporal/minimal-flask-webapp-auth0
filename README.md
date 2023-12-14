@@ -29,7 +29,7 @@ This application is a sample on how to integrate Auth0 for authentication in a F
 4. Start the server
 
    ```
-   flask --app app run --port 8000
+   flask --app app run --port 4040
    ```
    
 5. Visit [`http://localhost:4040/`](http://localhost:4040/) to access the starter web application.
