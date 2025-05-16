@@ -8,20 +8,21 @@ This application is a sample on how to integrate Auth0 for authentication in a F
     ```
     git clone https://github.com/jtemporal/minimal-flask-webapp-auth0.git && cd minimal-flask-webapp-auth0
     ```
-2. Create a `.config` file from `.config.example` and populate the values from your Auth0 Application. Here is 
+2. Create a `.config` file from `.config.example` and populate the values from your Auth0 Application.
    ```
    cp .config.example .config
    ```
+   Tip: you can use `openssl rand -hex 32` for the secret key.
 
 3. Create a virtual environment and install dependencies
-   
+
    ```
    # Create a venv
-   python3 -m venv .env 
-   
+   python3 -m venv .env
+
    # Activate
    source .env/bin/activate
-   
+
    # Install dependencies
    pip install -r requirements.txt
    ```
@@ -31,12 +32,12 @@ This application is a sample on how to integrate Auth0 for authentication in a F
    ```
    flask --app app run --port 4040
    ```
-   
+
 5. Visit [`http://localhost:4040/`](http://localhost:4040/) to access the starter web application.
 
 ----
 
-Where to find us: 
+Where to find us:
 * Jess' LinkedIn: http://linkedin.com/in/jessicatemporal/
 * Juan's LinkedIn: https://www.linkedin.com/in/bajcmartinez/
 
