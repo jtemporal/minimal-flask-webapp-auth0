@@ -1,5 +1,5 @@
 from auth.decorators import requires_auth
-from flask import Blueprint, render_template, session
+from flask import Blueprint, redirect, render_template, session, url_for
 
 
 webapp_bp = Blueprint('webapp', __name__, template_folder="templates")
@@ -24,3 +24,11 @@ def profile():
         'profile.html',
         session=session.get('user')
     )
+
+
+
+@webapp_bp.route("/redirect-example")
+@requires_auth
+def redirect_example():
+
+    return redirect(url_for("webapp.home"))
