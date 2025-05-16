@@ -28,7 +28,12 @@ def profile():
 
 
 @webapp_bp.route("/redirect-example")
-@requires_auth
 def redirect_example():
 
+    return redirect(url_for("webapp.home"))
+
+
+@webapp_bp.route("clear-session-example")
+def session_clearing():
+    session.clear()
     return redirect(url_for("webapp.home"))
